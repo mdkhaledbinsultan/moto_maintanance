@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* কালপুরুষ ফন্ট ডিক্লেয়ারেশন */
+@font-face {
+  font-family: 'Kalpurush';
+  src: url('/fonts/Kalpurush.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 105%; /* ফন্টের সাইজ সামঞ্জস্য রাখতে */
+}
+
+/* পুরো প্রজেক্টের বেস ফন্ট, সাইজ এবং লাইন হাইট সেটআপ */
+html, body {
+  font-family: 'Kalpurush', Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.6;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* সকল ইনপুট, বাটন এবং টেক্সট এলিমেন্টে কালপুরুষ ফন্ট নিশ্চিত করা */
+input, select, textarea, button, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kalpurush', Arial, sans-serif !important;
+}
+
+/* 🌟 প্রিমিয়াম গ্লাসমরফিজম, থ্রিডি শ্যাডো এবং হোভার অ্যানিমেশন */
+.glass-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 25px rgba(6, 182, 212, 0.2);
+}
